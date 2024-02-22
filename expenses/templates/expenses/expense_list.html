@@ -5,22 +5,28 @@
 <a href="{% url 'expenses:expense-create' %}">add</a>
 
 <form method="get" action="">
-  {{form.as_p}}
-  <button type="submit">search</button>
+	{{form.as_p}}
+	<button type="submit">search</button>
 </form>
 <br>
 <table border="1">
 	<caption>Expenses</caption>
 	<thead>
-	  <tr>
-		<th>no.</th>
-		<th>category</th>
-		<th>name</th>
-		<th>amount</th>
-		<th>date</th>
-		<th>actions</th>
-	  </tr>
-	</thead>
+      <tr>
+        <th>no.</th>
+        <th>
+            <a href="?{{ request.GET.urlencode }}&sort_by=category&sort_order=asc">category ↑</a> |
+            <a href="?{{ request.GET.urlencode }}&sort_by=category&sort_order=desc">↓</a>
+        </th>
+        <th>name</th>
+        <th>amount</th>
+        <th>
+            <a href="?{{ request.GET.urlencode }}&sort_by=date&sort_order=asc">date ↑</a> |
+            <a href="?{{ request.GET.urlencode }}&sort_by=date&sort_order=desc">↓</a>
+        </th>
+        <th>actions</th>
+      </tr>
+    </thead>
 	<tbody>
 
 	{% for obj in object_list %}
@@ -56,4 +62,27 @@
 	{% endfor %}
   </tr>
 </table>
+<br>
+<table border="1">
+    <caption>Summary per year-month</caption>
+    <thead>
+        <tr>
+            <th>year</th>
+            <th>month</th>
+            <th>total amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entry in expenses_per_year_month %}
+            <tr>
+                <td>{{ entry.year }}</td>
+                <td>{{ entry.month }}</td>
+                <td>{{ entry.monthly_total|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<br>
+<p>Total Amount Spent: {{ total_amount|floatformat:2 }}</p>
+<br>
 {% endblock %}
