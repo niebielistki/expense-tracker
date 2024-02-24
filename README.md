@@ -62,6 +62,10 @@ After setting up the project, you can start tracking your expenses by creating c
 
 **For a demonstration of the program in action, watch this video:**
 
+
+https://github.com/niebielistki/expense-tracker/assets/151925931/beef4a6e-1db7-462c-8101-d7676ecebed7
+
+
 ### Future Enhancements
 
 * **Dashboard:** A dashboard for visualizing expenses with charts and graphs for a quick financial overview.
