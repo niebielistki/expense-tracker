@@ -1,150 +1,298 @@
 [
     {
         "model": "expenses.category",
-        "pk": 1,
-        "fields": {
-            "name": "food"
-        }
-    },
-    {
-        "model": "expenses.category",
-        "pk": 2,
-        "fields": {
-            "name": "home (utilities)"
-        }
-    },
-    {
-        "model": "expenses.category",
-        "pk": 3,
-        "fields": {
-            "name": "clothes"
-        }
-    },
-    {
-        "model": "expenses.category",
-        "pk": 4,
-        "fields": {
-            "name": "transport"
-        }
-    },
-    {
-        "model": "expenses.expense",
-        "pk": 1,
-        "fields": {
-            "category": 1,
-            "name": "apples",
-            "amount": "2.40",
-            "date": "2021-02-03"
-        }
-    },
-    {
-        "model": "expenses.expense",
-        "pk": 2,
-        "fields": {
-            "category": 1,
-            "name": "bread",
-            "amount": "2.00",
-            "date": "2021-02-03"
-        }
-    },
-    {
-        "model": "expenses.expense",
-        "pk": 3,
-        "fields": {
-            "category": 1,
-            "name": "salami",
-            "amount": "4.30",
-            "date": "2021-02-02"
-        }
-    },
-    {
-        "model": "expenses.expense",
-        "pk": 4,
-        "fields": {
-            "category": 1,
-            "name": "butter",
-            "amount": "5.20",
-            "date": "2021-02-02"
-        }
-    },
-    {
-        "model": "expenses.expense",
         "pk": 5,
         "fields": {
-            "category": 1,
-            "name": "butter",
-            "amount": "5.20",
-            "date": "2020-12-27"
+            "name": "entertainment"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 6,
         "fields": {
-            "category": 2,
-            "name": "rent",
-            "amount": "800.00",
-            "date": "2021-02-04"
+            "name": "groceries"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 7,
         "fields": {
-            "category": 2,
-            "name": "rent",
-            "amount": "800.00",
-            "date": "2020-12-27"
+            "name": "utilities"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 8,
         "fields": {
-            "category": 2,
-            "name": "electricity",
-            "amount": "42.00",
-            "date": "2021-02-04"
+            "name": "healthcare"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 9,
         "fields": {
-            "category": 2,
-            "name": "electricity",
-            "amount": "42.00",
-            "date": "2020-12-07"
+            "name": "education"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 10,
         "fields": {
-            "category": 3,
-            "name": "trousers",
-            "amount": "110.00",
-            "date": "2021-02-04"
+            "name": "travel"
         }
     },
     {
-        "model": "expenses.expense",
+        "model": "expenses.category",
         "pk": 11,
         "fields": {
-            "category": 3,
-            "name": "shirt",
-            "amount": "60.00",
-            "date": "2021-01-16"
+            "name": "dining out"
+        }
+    },
+    {
+        "model": "expenses.category",
+        "pk": 12,
+        "fields": {
+            "name": "gifts & donations"
         }
     },
     {
         "model": "expenses.expense",
-        "pk": 12,
+        "pk": 13,
         "fields": {
-            "category": 3,
-            "name": "shirt",
+            "category": 5,
+            "name": "concert tickets",
+            "amount": "150.00",
+            "date": "2021-03-15"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 14,
+        "fields": {
+            "category": 5,
+            "name": "movie streaming subscription",
+            "amount": "12.99",
+            "date": "2021-03-01"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 15,
+        "fields": {
+            "category": 5,
+            "name": "video game purchase",
+            "amount": "59.99",
+            "date": "2021-04-05"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 16,
+        "fields": {
+            "category": 6,
+            "name": "weekly groceries",
+            "amount": "90.00",
+            "date": "2021-03-08"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 17,
+        "fields": {
+            "category": 6,
+            "name": "organic fruits",
+            "amount": "30.50",
+            "date": "2021-03-22"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 18,
+        "fields": {
+            "category": 6,
+            "name": "specialty cheeses",
+            "amount": "45.75",
+            "date": "2021-04-02"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 19,
+        "fields": {
+            "category": 7,
+            "name": "internet bill",
+            "amount": "30.00",
+            "date": "2021-03-05"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 20,
+        "fields": {
+            "category": 7,
+            "name": "water bill",
+            "amount": "25.00",
+            "date": "2021-03-10"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 21,
+        "fields": {
+            "category": 7,
+            "name": "electricity bill",
             "amount": "60.00",
-            "date": "2020-12-25"
+            "date": "2021-03-15"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 22,
+        "fields": {
+            "category": 8,
+            "name": "pharmacy",
+            "amount": "23.50",
+            "date": "2021-02-25"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 23,
+        "fields": {
+            "category": 8,
+            "name": "doctor visit",
+            "amount": "100.00",
+            "date": "2021-03-20"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 24,
+        "fields": {
+            "category": 8,
+            "name": "health insurance",
+            "amount": "250.00",
+            "date": "2021-04-01"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 25,
+        "fields": {
+            "category": 9,
+            "name": "online course",
+            "amount": "200.00",
+            "date": "2021-01-20"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 26,
+        "fields": {
+            "category": 9,
+            "name": "textbooks",
+            "amount": "120.00",
+            "date": "2021-02-15"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 27,
+        "fields": {
+            "category": 9,
+            "name": "educational software",
+            "amount": "75.00",
+            "date": "2021-03-10"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 28,
+        "fields": {
+            "category": 10,
+            "name": "plane tickets",
+            "amount": "500.00",
+            "date": "2021-04-10"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 29,
+        "fields": {
+            "category": 10,
+            "name": "hotel booking",
+            "amount": "300.00",
+            "date": "2021-04-12"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 30,
+        "fields": {
+            "category": 10,
+            "name": "travel insurance",
+            "amount": "50.00",
+            "date": "2021-04-08"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 31,
+        "fields": {
+            "category": 11,
+            "name": "dinner date",
+            "amount": "75.00",
+            "date": "2021-02-14"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 32,
+        "fields": {
+            "category": 11,
+            "name": "fast food",
+            "amount": "15.00",
+            "date": "2021-03-22"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 33,
+        "fields": {
+            "category": 11,
+            "name": "coffee shop",
+            "amount": "5.75",
+            "date": "2021-04-03"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 34,
+        "fields": {
+            "category": 12,
+            "name": "charity donation",
+            "amount": "100.00",
+            "date": "2021-03-20"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 35,
+        "fields": {
+            "category": 12,
+            "name": "birthday gift",
+            "amount": "50.00",
+            "date": "2021-03-10"
+        }
+    },
+    {
+        "model": "expenses.expense",
+        "pk": 36,
+        "fields": {
+            "category": 12,
+            "name": "wedding gift",
+            "amount": "150.00",
+            "date": "2021-04-20"
         }
     }
 ]

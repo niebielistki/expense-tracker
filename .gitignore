@@ -1,4 +1,9 @@
 *.pyc
 .idea
-*.sqlite3
+.log
+.env
+db.sqlite3
+/static/
 __pycache__
+
+.DS_Store
